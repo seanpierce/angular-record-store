@@ -1,0 +1,22 @@
+<h3>Add New Album to Inventory</h3>
+
+<label>Album Title:</label><br>
+<input #newTitle>
+<br>
+
+<label>Album Artist:</label><br>
+<input #newArtist>
+<br>
+
+<label>Album Image:</label><br>
+<input #newImage>
+<br>
+
+<label>Album Audio:</label><br>
+<input #newAudio>
+<br>
+
+<label>Album Description:</label><br>
+<textarea #newDescription></textarea>
+<br><br>
+<button (click)="submitForm(newTitle.value, newArtist.value, newDescription.value, newImage.value, newAudio.value); newAudio.value=''; newImage.value=''; newTitle.value=''; newArtist.value=''; newDescription.value='';">Add</button>
