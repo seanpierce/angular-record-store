@@ -1,0 +1,15 @@
+<div class="row">
+  <div class="col-sm-6">
+    <h3>{{albumToDisplay.title}}</h3>
+    <strong>{{albumToDisplay.artist}}</strong>
+    <br><br>
+    <p>{{albumToDisplay.description}}</p>
+    <audio controls *ngIf="albumToDisplay.audio != ''">
+      <source src="{{albumToDisplay.audio}}" type="audio/mpeg">
+      Your browser does not support the audio tag.
+    </audio>
+  </div>
+  <div class="col-sm-6">
+    <img src="{{albumToDisplay.image}}">
+  </div>
+</div>

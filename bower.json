@@ -1,0 +1,20 @@
+{
+  "name": "online-store",
+  "description": "",
+  "main": "",
+  "authors": [
+    "seanpierce <contact@seanpierce.us>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}

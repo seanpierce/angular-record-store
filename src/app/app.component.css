@@ -1,0 +1,23 @@
+.my-nav {
+  border-bottom: solid 1px #333;
+}
+ul {
+  min-width: 100%;
+  display: block;
+  list-style: none;
+  padding: 1em 0 1.5em 0;
+}
+ul li {
+  float: right;
+  margin-left: 1em;
+}
+ul li:first-child {
+  float: left;
+  margin-left: 0;
+}
+a {
+  color: inherit;
+}
+.my-content {
+  margin-top: 2em;
+}
