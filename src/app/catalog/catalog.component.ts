@@ -21,8 +21,8 @@ export class CatalogComponent implements OnInit {
   }
 
   // this method takes a clicked album (passed in) and uses it's "id" to dynamically generate (and visit) a new route
-  goToDetailPage(clickedAlbum: Album) {
-    // this.router.navigate(['albums', clickedAlbum.id]);
+  goToDetailPage(clickedAlbum) {
+    this.router.navigate(['albums', clickedAlbum.$key]);
   };
 
 }
