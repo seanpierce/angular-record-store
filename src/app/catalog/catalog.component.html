@@ -1,6 +1,6 @@
 <h3>Catalog</h3>
 
-<div *ngFor="let album of albums" class="record">
+<div *ngFor="let album of albums | async" class="record">
   <div class="record-info-wrapper" (click)="goToDetailPage(album)">
     <img src="{{album.image}}" alt="">
     <div class="hover-info">

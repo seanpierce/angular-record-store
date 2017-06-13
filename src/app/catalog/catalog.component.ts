@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Album } from '../album.model';
 import { Router } from '@angular/router';
 import { AlbumService } from '../album.service';
+import { FirebaseListObservable } from 'angularfire2/database';
 
 @Component({
   selector: 'app-catalog',
@@ -10,10 +11,10 @@ import { AlbumService } from '../album.service';
   providers: [AlbumService]
 })
 export class CatalogComponent implements OnInit {
+  // same as in our service, set albums equal to a special firebase object array
+  albums: FirebaseListObservable<any[]>;
 
-  albums: Album[];
-
-  constructor(private router: Router, private albumService: AlbumService) {}
+  constructor(private router: Router,private albumService: AlbumService) {}
 
   ngOnInit() {
     this.albums = this.albumService.getAlbums();

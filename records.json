@@ -1,0 +1,44 @@
+{ "albums": [
+  { "title": "Sutro",
+    "artist": "Sean Pierce",
+    "description": "",
+    "image": "\"Fetish club-ready EBM from ASSS's Sean Pierce, coming thru with his solo debut mini-LP on Berlin's Mannequin. Crashing in hard with the adrenalised, An-i compatible 'Immodest Force', we're plunged into the noise bath of 'Hair' and booted into cavernous warehouse headspace with the power-station techno throb of 'Memoir'. 'Motorcade' takes effect with gritty, roiling machine rhythms on the other side, pursued by the body-disassembling mechanics of 'Sutro' and the dry, jackin' aerobics of 'Torn Screen' to spend up his chips.\" ~boomkat.com",
+    "audio": "https://p4.bcbits.com/download/track/b56989c4aedc07e4bcf1830bea06338e/mp3-128/3315665535?fsig=94d8b129265561c4471fcd478fed6b94&id=3315665535&stream=1&ts=1497326400.0&token=1497326460_26c87d7bd290c1f499c859952c2275e59a5753e6",
+    "id": 1
+  },
+  { "title": "Battery",
+    "artist": "Sean Pierce",
+    "description": "Portland Oregon's Sean Pierce hits us with a full EP of Industrial inspired electronics and heavy techno. From Throbbing gristle like grooves to banging dancefloor ragers this totally slays.",
+    "image": "https://f4.bcbits.com/img/a1852492000_10.jpg",
+    "audio": "",
+    "id": 2
+  },
+  { "title": "Transit",
+    "artist": "Sean Pierce",
+    "description": "As half of the experimental electronic noise duo ASSS, Sean Pierce Sumler seems to approach each show as an adventure. No two sets sound the same or even terribly similar: one may be danceable, the next an avant grade expression of random noises. However, his solo shows are marked by highly danceable driving techno beats of a Germanic bent, so it should come as no surprise that his Transit EP is as well. Let’s be clear about the sound: it’s bereft of any hip hop influence whatsoever, so if the term “techno” calls to mind a couple of guys in shiny suits bobbing their heads in unison, you need to recalibrate. Pierce works in the same territory as techno pioneers Kraftwerk and Manuel Göttsching, crafting meticulous, insidiously catchy tracks from analog synths with industrial precision. “Hive” is immediately hooky and demands movement with layered percussive samples; “The Visitor” sounds simultaneously retro and fresh, like the soundtrack of a lost East German science-fiction film from 1988; “Clara” an extended meditation on a theme peppered with samples of industrial noise and guitar feedback. Only opening track “Transit” attempts to resist the dance floor, starting in early Ministry mode and playing with tempo a bit as it thumps along. Transit is a confident and accomplished EP of songs. If Kraftwerk or the better Cabaret Voltaire appeal to you, there’s a lot to like in these 4 tracks.",
+    "image": "https://f4.bcbits.com/img/a3511349918_10.jpg",
+    "audio": "",
+    "id": 3
+  },
+  { "title": "ASSS",
+    "artist": "100 EP",
+    "description": "No description available",
+    "image": "https://www.residentadvisor.net/images/cover/tr-755303.jpg",
+    "audio": "",
+    "id": 4
+  },
+  { "title": "ASSS",
+    "artist": "Taxi Helms",
+    "description": "No description available",
+    "image": "https://f4.bcbits.com/img/a2951083580_10.jpg",
+    "audio": "",
+    "id": 5
+  },
+  { "title": "ASSS",
+    "artist": "Halt Sex Mi",
+    "description": "No description available",
+    "image": "",
+    "audio": "https://images.bigcartel.com/product_images/195843877/150581.jpg?auto=format&fit=max&h=1000&w=1000",
+    "id": 6
+  }
+]}

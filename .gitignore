@@ -9,6 +9,9 @@
 /node_modules
 /bower_components
 
+* firebase credentials
+/src/app/api-keys.ts 
+
 # IDEs and editors
 /.idea
 .project
