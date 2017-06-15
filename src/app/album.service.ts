@@ -27,4 +27,15 @@ export class AlbumService {
     return this.database.object('albums/' + albumId);
   }
 
+  updateAlbum(updatedAlbum){
+    var albumInDb = this.getAlbumById(updatedAlbum.$key);
+    albumInDb.update({
+      title: updatedAlbum.title,
+      artist: updatedAlbum.artist,
+      image: updatedAlbum.image,
+      audio: updatedAlbum.audio,
+      description: updatedAlbum.description
+    });
+  }
+
 }
