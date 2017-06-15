@@ -7,6 +7,7 @@ import * as firebase from 'firebase/app';
 @Component({
   selector: 'app-auth',
   templateUrl: './auth.component.html',
+  styleUrls: ['./auth.component.css'],
   providers: [AngularFireAuth]
 })
 export class AuthComponent {

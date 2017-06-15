@@ -1,0 +1,9 @@
+.red-logout {
+  color: red;
+  margin-left: 0.75em;
+  cursor: pointer;
+}
+.login-message {
+  margin: 0 0 1em 0;
+  display: block;
+}

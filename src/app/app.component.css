@@ -1,17 +1,17 @@
 .my-nav {
   border-bottom: solid 1px #333;
 }
-ul {
+.my-nav ul {
   min-width: 100%;
   display: block;
   list-style: none;
   padding: 1em 0 1.5em 0;
 }
-ul li {
+.my-nav ul li {
   float: right;
   margin-left: 1em;
 }
-ul li:first-child {
+.my-nav ul li:first-child {
   float: left;
   margin-left: 0;
 }
@@ -20,4 +20,30 @@ a {
 }
 .my-content {
   margin-top: 2em;
+}
+.my-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border-top: solid 1px #333;
+}
+.my-footer ul {
+  min-width: 100%;
+  display: block;
+  list-style: none;
+  padding: 1.5em 0 1em 0;
+  text-align: center;
+}
+.my-footer ul li {
+  display: inline;
+  margin: 0 0.5em;
+  cursor: pointer;
+}
+.my-footer img {
+  height: 2em;
+  width: auto;
+  padding: 0.25em;
+}
+#logo {
+  height: 1em;
 }
