@@ -6,27 +6,7 @@ import * as firebase from 'firebase/app';
 
 @Component({
   selector: 'app-auth',
-  template: `
-  <h3>Admin login</h3>
-
-    <strong>
-      <span *ngIf="user | async">Welcome</span>
-      <span *ngIf="(user | async) == null">please log in</span>
-      {{ (user | async)?.email }}
-      <br>
-    </strong>
-
-    <div *ngIf="(user | async) == null">
-      <input type="email" #email placeholder="Email">
-      <input type="password" #password placeholder="Password">
-      <button (click)="login(email.value, password.value)">Login</button>
-    </div>
-    <div *ngIf="user | async" >
-      <button (click)="logout()">Logout</button>
-    </div>
-
-    <app-admin *ngIf="user | async"></app-admin>
-  `,
+  templateUrl: './auth.component.html',
   providers: [AngularFireAuth]
 })
 export class AuthComponent {

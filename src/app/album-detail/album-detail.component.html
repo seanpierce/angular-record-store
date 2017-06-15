@@ -4,8 +4,8 @@
     <strong>{{(albumToDisplay | async)?.artist}}</strong>
     <br><br>
     <p>{{(albumToDisplay | async)?.description}}</p>
-    <audio controls *ngIf="albumToDisplay.audio != ''">
-      <source src="{{albumToDisplay.audio}}" type="audio/mpeg">
+    <audio controls *ngIf="(albumToDisplay | async)?.audio">
+      <source src="{{(albumToDisplay | async)?.audio}}" type="audio/mpeg">
       Your browser does not support the audio tag.
     </audio>
   </div>
