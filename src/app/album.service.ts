@@ -27,7 +27,7 @@ export class AlbumService {
     return this.database.object('albums/' + albumId);
   }
 
-  updateAlbum(updatedAlbum){
+  updateAlbum(updatedAlbum) {
     var albumInDb = this.getAlbumById(updatedAlbum.$key);
     albumInDb.update({
       title: updatedAlbum.title,
@@ -36,6 +36,11 @@ export class AlbumService {
       audio: updatedAlbum.audio,
       description: updatedAlbum.description
     });
+  }
+
+  deleteAlbum(deletedAlbum){
+    var albumInDb = this.getAlbumById(deletedAlbum.$key);
+    albumInDb.remove();
   }
 
 }

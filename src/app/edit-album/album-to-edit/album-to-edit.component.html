@@ -6,7 +6,8 @@
     <input #editImage placeholder="Image Src: {{album.image}}" [(ngModel)]="album.image">
     <input #editAudio placeholder="Audio Src: {{album.audio}}" [(ngModel)]="album.audio">
     <input #editDescription placeholder="Description: {{album.description}}" [(ngModel)]="album.description">
-    <button (click)="updateAlbumToService(album)">Done</button>
+    <button (click)="updateAlbumToService(album)">Submit</button>
     <button (click)="showEditForm = !showEditForm;">Cancel</button>
+    <button (click)="deleteAlbumToService(album)" class="red">Delete</button>
   </div>
 </li>

@@ -22,3 +22,7 @@ button {
 .currentEdit {
   font-weight: bold;
 }
+.red {
+  border: solid 1px red;
+  color: red;
+}
