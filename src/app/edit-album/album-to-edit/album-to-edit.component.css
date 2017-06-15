@@ -1,0 +1,22 @@
+li {
+  cursor: pointer;
+}
+.edit-form {
+  background-color: #f3f3f3;
+  padding: 1em;
+}
+input {
+  width: 100%;
+  border: none;
+  border-bottom: solid 1px #333;
+  background-color: rgba(0, 0, 0, 0);
+}
+input:focus {
+  outline-width: 0;
+}
+button {
+  margin-top: 1em;
+}
+.currentEdit {
+  font-weight: bold;
+}

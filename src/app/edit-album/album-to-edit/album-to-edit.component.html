@@ -1,0 +1,12 @@
+<li>
+  <span (click)="showEditForm = !showEditForm" [ngClass]="{currentEdit: showEditForm}">{{album.title}} - {{album.artist}}</span>
+  <div *ngIf="showEditForm" class="edit-form">
+    <input #editTitle placeholder="Title: {{album.title}}">
+    <input #editArtist placeholder="Artist: {{album.artist}}">
+    <input #editImage placeholder="Image Src: {{album.image}}">
+    <input #editAudio placeholder="Audio Src: {{album.audio}}">
+    <input #editDescription placeholder="Description: {{album.description}}">
+    <button>Done</button>
+    <button (click)="showEditForm = !showEditForm">Cancel</button>
+  </div>
+</li>

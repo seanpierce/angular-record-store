@@ -20,3 +20,7 @@
 <textarea #newDescription></textarea>
 <br><br>
 <button (click)="submitForm(newTitle.value, newArtist.value, newDescription.value, newImage.value, newAudio.value); newAudio.value=''; newImage.value=''; newTitle.value=''; newArtist.value=''; newDescription.value='';">Add</button>
+
+<hr>
+
+<app-edit-album></app-edit-album>
