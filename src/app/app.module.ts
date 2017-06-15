@@ -15,6 +15,7 @@ import { AlbumDetailComponent } from './album-detail/album-detail.component';
 import { AdminComponent } from './admin/admin.component';
 import { EditAlbumComponent } from './edit-album/edit-album.component';
 import { AlbumToEditComponent } from './edit-album/album-to-edit/album-to-edit.component';
+import { AuthComponent } from './auth/auth.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -32,7 +33,8 @@ export const firebaseConfig = {
     AlbumDetailComponent,
     AdminComponent,
     EditAlbumComponent,
-    AlbumToEditComponent
+    AlbumToEditComponent,
+    AuthComponent
   ],
   imports: [
     BrowserModule,

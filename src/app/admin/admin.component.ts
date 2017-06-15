@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { AlbumService } from '../album.service';
 import { Album } from '../album.model';
 import { EditAlbumComponent } from '../edit-album/edit-album.component';
+import { AuthComponent } from '../auth/auth.component';
 
 @Component({
   selector: 'app-admin',
