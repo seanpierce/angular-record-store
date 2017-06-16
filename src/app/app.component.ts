@@ -11,7 +11,7 @@ import * as firebase from 'firebase/app';
   providers: [AngularFireAuth]
 })
 export class AppComponent {
-  title = 'Record Store';
+  title = 'Angular Record Store';
 
   user: Observable<firebase.User>;
 

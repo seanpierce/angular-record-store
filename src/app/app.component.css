@@ -1,5 +1,5 @@
 .my-nav {
-  border-bottom: solid 1px #333;
+  box-shadow: 0 1px 3px #888888
 }
 .my-nav ul {
   min-width: 100%;
@@ -19,25 +19,32 @@ a {
   color: inherit;
 }
 .my-content {
-  margin-top: 2em;
+  padding-top: 2em;
+  padding-bottom: 8em;
 }
 .my-footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  border-top: solid 1px #333;
+  /*border-top: solid 1px #333;*/
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 -1px 3px #888888
 }
 .my-footer ul {
   min-width: 100%;
   display: block;
   list-style: none;
-  padding: 1.5em 0 1em 0;
+  padding: 0.5em 0 0em 0;
   text-align: center;
+  color: #888;
 }
 .my-footer ul li {
   display: inline;
   margin: 0 0.5em;
   cursor: pointer;
+}
+.my-footer ul li:hover {
+  color: #333;
 }
 .my-footer img {
   height: 2em;
@@ -46,4 +53,7 @@ a {
 }
 #logo {
   height: 1em;
+}
+.login-message {
+  color: #428bca;
 }

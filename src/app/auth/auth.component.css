@@ -7,3 +7,16 @@
   margin: 0 0 1em 0;
   display: block;
 }
+input {
+  width: 100%;
+  border: none;
+  border-bottom: solid 1px #999;
+  background-color: rgba(0, 0, 0, 0);
+  margin: 0.5em 0;
+}
+input:focus, textarea:focus {
+  outline-width: 0;
+}
+button {
+  margin-top: 1em;
+}
