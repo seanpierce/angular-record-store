@@ -5,6 +5,7 @@
       <li><a routerLink="admin">Admin</a></li>
       <li><a routerLink="about">About</a></li>
       <li><a routerLink="catalog">Catalog</a></li>
+      <li><a routerLink="checkout">Cart (0)</a></li>
       <li *ngIf="user | async" class="login-message"><em>signed in as {{ (user | async)?.email }}</em></li>
     </ul>
   </div>

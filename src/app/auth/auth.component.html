@@ -7,6 +7,7 @@
 </div>
 
 <div *ngIf="(user | async) == null">
+  <span id="login-warning">An error occured while attempting to log you in, please try again</span>
   <input type="email" #email placeholder="Email">
   <input type="password" #password placeholder="Password">
   <button (click)="login(email.value, password.value)">Login</button>

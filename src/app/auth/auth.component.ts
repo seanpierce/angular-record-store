@@ -19,7 +19,17 @@ export class AuthComponent {
   }
 
   login(email, password) {
-    this.afAuth.auth.signInWithEmailAndPassword(email, password);
+    this.afAuth.auth.signInWithEmailAndPassword(email, password)
+    .then(function(firebaseUser) {
+    // success!
+    // console.log(firebaseUser);
+    document.getElementById('login-warning').style.display = 'none';
+    })
+    .catch(function(error) {
+      // failure :(
+      document.getElementById('login-warning').style.display = 'block';
+      console.log('dang');
+    });
   }
 
   logout() {

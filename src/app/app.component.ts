@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Cart } from './cart.model';
+import { Album } from './album.model';
 import { AuthComponent } from './auth/auth.component';
 import { Observable } from 'rxjs/Observable';
 import { AngularFireAuth } from 'angularfire2/auth';
