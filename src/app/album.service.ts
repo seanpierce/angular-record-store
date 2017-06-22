@@ -1,9 +1,11 @@
 import { Injectable } from '@angular/core';
 import { Album } from './album.model';
 import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
+import * as firebase from 'firebase';
 
 @Injectable()
 export class AlbumService {
+  folder:any;
 
   // declares firebase information as an array
   albums: FirebaseListObservable<any[]>;
@@ -13,6 +15,8 @@ export class AlbumService {
     // then call .list to specify we're gathering a list of multiple things
     // pass in albums to specify which list of data we'd like to get
     this.albums = database.list('albums');
+    // set upload folder name
+    this.folder = 'uploads';
   }
 
   getAlbums() {
@@ -21,6 +25,20 @@ export class AlbumService {
 
   addAlbum(newAlbum: Album) {
     this.albums.push(newAlbum);
+  }
+
+  saveAlbum(album) {
+    // create root reference
+    let storageRef = firebase.storage().ref();
+    for(let selectedFile of  [(<HTMLInputElement>document.getElementById('imageUpload')).files[0]]) {
+      let path = `/${this.folder}/${selectedFile.name }`;
+      let iRef = storageRef.child(path);
+      iRef.put(selectedFile).then((snapshot) => {
+        album.image = selectedFile.name;
+        album.path = path;
+        return this.albums.push(album);
+      });
+    }
   }
 
   getAlbumById(albumId){

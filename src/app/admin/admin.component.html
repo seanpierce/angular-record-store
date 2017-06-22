@@ -1,19 +1,19 @@
 <h3>Add New Album to Inventory</h3>
 
-<input #newTitle placeholder="Album Title:">
+<input #newTitle placeholder="Album Title:" [(ngModel)]="title">
 <br>
 
-<input #newArtist placeholder="Album Artist:">
+<input #newArtist placeholder="Album Artist:" [(ngModel)]="artist">
 <br>
 
-<input type="file" #imageUpload>
+<input type="file" id="imageUpload" [(ngModel)]="image">
 
-<input #newAudio placeholder="Album Audio Source:">
+<input #newAudio placeholder="Album Audio Source:" [(ngModel)]="audio">
 <br>
 
-<textarea #newDescription placeholder="Album Description:"></textarea>
+<textarea #newDescription placeholder="Album Description:" [(ngModel)]="description"></textarea>
 <br><br>
-<button (click)="submitForm(newTitle.value, newArtist.value, newDescription.value, newImage.value, newAudio.value); newAudio.value=''; newImage.value=''; newTitle.value=''; newArtist.value=''; newDescription.value='';">Add</button>
+<button (click)="submitForm()">Add</button>
 
 <hr>
 
