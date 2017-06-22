@@ -6,6 +6,7 @@ h3 {
   width: 25%;
   display: inline-block;
   padding: 1em;
+  transition: all 0.5s;
 }
 .record img {
   width: 100%;
