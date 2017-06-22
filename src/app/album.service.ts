@@ -23,9 +23,9 @@ export class AlbumService {
     return this.albums;
   }
 
-  addAlbum(newAlbum: Album) {
-    this.albums.push(newAlbum);
-  }
+  // addAlbum(newAlbum: Album) {
+  //   this.albums.push(newAlbum);
+  // }
 
   saveAlbum(album) {
     // create root reference
@@ -34,7 +34,7 @@ export class AlbumService {
       let path = `/${this.folder}/${selectedFile.name }`;
       let iRef = storageRef.child(path);
       iRef.put(selectedFile).then((snapshot) => {
-        album.image = selectedFile.name;
+        album.image = snapshot.downloadURL;
         album.path = path;
         return this.albums.push(album);
       });
