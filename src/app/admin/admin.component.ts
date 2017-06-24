@@ -3,7 +3,6 @@ import { AlbumService } from '../album.service';
 import { Album } from '../album.model';
 import { EditAlbumComponent } from '../edit-album/edit-album.component';
 import { AuthComponent } from '../auth/auth.component';
-import * as firebase from 'firebase';
 
 @Component({
   selector: 'app-admin',
@@ -17,21 +16,21 @@ export class AdminComponent implements OnInit {
   audio:any;
   description:any;
 
-  constructor(
-    private albumService: AlbumService
-  ) { }
+  constructor(private albumService: AlbumService) {
+  }
 
   ngOnInit() {
   }
+
 
   submitForm() {
     let album = {
       title: this.title,
       artist: this.artist,
-      audio: this.audio,
-      description: this.description
+      image: "",
+      audio: this.audio || "",
+      description: this.description || ""
     }
-    this.albumService.saveAlbum(album); 
   }
 
 }

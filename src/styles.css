@@ -3,3 +3,6 @@ button {
   background-color: rgba(0, 0, 0, 0);
   border: solid 1px #333;
 }
+.container {
+  transition: all 0.5s;
+}

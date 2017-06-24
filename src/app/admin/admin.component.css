@@ -15,3 +15,9 @@ textarea {
 input[type="file"] {
   border-bottom: none;
 }
+#image-upload-button {
+  padding: 0.5em;
+  border: solid 1px #333;
+  display: inline-block;
+  cursor: pointer;
+}

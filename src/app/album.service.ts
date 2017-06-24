@@ -23,19 +23,16 @@ export class AlbumService {
     return this.albums;
   }
 
-  // addAlbum(newAlbum: Album) {
-  //   this.albums.push(newAlbum);
-  // }
-
   saveAlbum(album) {
     // create root reference
     let storageRef = firebase.storage().ref();
-    for(let selectedFile of  [(<HTMLInputElement>document.getElementById('imageUpload')).files[0]]) {
+    for(let selectedFile of [(<HTMLInputElement>document.getElementById('imageUpload')).files[0]]) {
       let path = `/${this.folder}/${selectedFile.name }`;
-      let iRef = storageRef.child(path);
-      iRef.put(selectedFile).then((snapshot) => {
+      let task = storageRef.child(path);
+      task.put(selectedFile).then((snapshot) => {
+        // set image url
         album.image = snapshot.downloadURL;
-        album.path = path;
+        // push to db
         return this.albums.push(album);
       });
     }

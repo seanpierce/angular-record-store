@@ -2,16 +2,16 @@
 
 <input #newTitle placeholder="Album Title:" [(ngModel)]="title">
 <br>
-
 <input #newArtist placeholder="Album Artist:" [(ngModel)]="artist">
 <br>
-
-<input type="file" id="imageUpload" [(ngModel)]="image">
-
-<input #newAudio placeholder="Album Audio Source:" [(ngModel)]="audio">
+<textarea #newDescription placeholder="Album Description:" [(ngModel)]="description"></textarea>
 <br>
 
-<textarea #newDescription placeholder="Album Description:" [(ngModel)]="description"></textarea>
+<input type="file" id="imageUpload" [(ngModel)]="image" style="display:none;">
+<div id="image-upload-button" onclick="document.getElementById('imageUpload').click();">Upload Image</div><span id="progress"></span><span id="img-upload-progress" style="display:none;">Success!</span>
+
+<input type="text" #nawAudio placeholder="Audio URL" [(ngModel)]="audio">
+
 <br><br>
 <button (click)="submitForm()">Add</button>
 
