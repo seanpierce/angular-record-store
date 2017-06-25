@@ -6,11 +6,17 @@
 <br>
 <textarea #newDescription placeholder="Album Description:" [(ngModel)]="description"></textarea>
 <br>
+<select #newFormat [(ngModel)]="format">
+  <option value="none" disabled>Select a format</option>
+  <option value="vinyl">Vinyl</option>
+  <option value="cassette">Cassette</option>
+  <option value="digital">Digital</option>
+</select>
 
 <input type="file" id="imageUpload" [(ngModel)]="image" style="display:none;">
 <div id="image-upload-button" onclick="document.getElementById('imageUpload').click();">Upload Image</div><span id="progress"></span>
 
-<input type="text" #nawAudio placeholder="Audio URL" [(ngModel)]="audio">
+<input type="text" #newAudio placeholder="Audio URL" [(ngModel)]="audio" style="display:none;">
 
 <br><br>
 <button (click)="submitForm()">Add</button>

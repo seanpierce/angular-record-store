@@ -17,6 +17,7 @@ export class AdminComponent implements OnInit {
   artist:any;
   audio:any;
   description:any;
+  format:any = "none"; // default value set for select display in html
 
   constructor(private albumService: AlbumService, private database: AngularFireDatabase) {
   }
@@ -37,7 +38,7 @@ export class AdminComponent implements OnInit {
       var storageRef = firebase.storage().ref('uploads/' + file.name);
       // create task to show progress
       var task = storageRef.put(file);
-      
+
       // update progress
       task.on('state_changed',
         async function progress(snapshot) {
@@ -65,15 +66,17 @@ export class AdminComponent implements OnInit {
     };
   }
 
-
+  // function to send new album to service (to be saved to db)
   submitForm() {
     let album = {
       title: this.title,
       artist: this.artist,
       image: "",
       audio: this.audio || "",
-      description: this.description || ""
+      description: this.description || "",
+      format: this.format || "other"
     }
+    this.albumService.saveAlbum(album);
   }
 
 }

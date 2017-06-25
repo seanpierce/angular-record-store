@@ -4,6 +4,7 @@ export class Album {
     public artist: string,
     public description: string,
     public image: string,
-    public audio: string
+    public audio: string,
+    public format: string
   ) { }
 }
