@@ -21,3 +21,9 @@ input[type="file"] {
   display: inline-block;
   cursor: pointer;
 }
+#progress {
+  margin-left: 1em;
+}
+.preview-img {
+  width: 1em;
+}
